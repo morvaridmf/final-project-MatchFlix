@@ -30,7 +30,6 @@ export default function App() {
       })
       .then(res => res.json())
       .then(data => {
-        console.log('igjen')
         setLikedMovies([...data.liked_movies])
         setDislikedMovies([...data.disliked_movies])
       })
@@ -64,7 +63,6 @@ export default function App() {
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Auth0Provider
-    // Hardcoding it for now
       domain="dev-3g7shhdy.us.auth0.com"
       clientId="7TetmI8GQhtDruSdI5ymkH4aXiLcxaOz"
       redirectUri={window.location.origin}
