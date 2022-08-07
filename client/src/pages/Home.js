@@ -56,18 +56,6 @@ const Home = ({ dislikedMovies,  setDislikedMovies, likedMovies,  setLikedMovies
         setMovies(nope.filter(el => el !== undefined));});
   }, [likedMovies]);
 
-  // useEffect(() => {
-  //   // Defaults to popular movies
-  //   fetch('https://api.themoviedb.org/3/discover/movie?api_key=2b61576c6129138ce5beeb3937518565&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_watch_monetization_types=flatrate')
-  //   .then(res => res.json())
-  //   .then(data => { 
-  //     console.log(data.results)
-  //     let nope = data.results.filter(el => dislikedMovies.find(movie => movie.id === !el.id));
-  //     nope.push(data.results.filter(el => likedMovies.find(movie => movie.id === !el.id))) 
-  //     console.log('nope', nope);
-  //     setMovies(nope);
-  //   });
-  // }, [])
 
   useEffect(() => {
     if(counter === movies.length - 1){

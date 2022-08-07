@@ -197,7 +197,7 @@ body {
   margin-top: 1.5em;
   padding: 0.3em 1em;
   border-radius: 10px;
-  width: 9em;
+  width: 12em;
   background: transparent;
   border: 1px solid #6E83CF;
   color: #EAECFF;
@@ -208,7 +208,13 @@ body {
   background-repeat: no-repeat;
   background-position: right 1rem center;
   background-size: 1em;
+  cursor: pointer;
 }
+
+.category_bar option{
+  width: 15rem;
+}
+
 
 .category_bar {
   background-image:
@@ -238,6 +244,11 @@ body {
   justify-content: center;
   color: #6E83CF;
 }
+.option_item{
+  color:  #0b1f2c;
+  font-size: 1rem;
+  
+}
 
 .movie-card {
   display: grid;
@@ -255,6 +266,7 @@ body {
   padding: 0.5em;
   max-width: 450px;
   max-height: 675px;
+  cursor: pointer;
 }
 
 .hidden {
@@ -438,10 +450,12 @@ body {
 .like_btn {
   background-image: url('./components/greenHeart.png');
   background-size: 100% auto;
+  cursor: pointer;
 }
 .dislike_btn {
   background-image: url('./components/remove.png');
   background-size: 100% auto;
+  cursor: pointer;
 }
 
 .delete-btn {
