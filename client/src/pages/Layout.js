@@ -1,6 +1,7 @@
 import { Outlet, Link } from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react";
 import { useRef } from "react";
+import React from 'react';
 
 const Layout = () => {
   const { user } = useAuth0();
@@ -15,7 +16,7 @@ const Layout = () => {
      
       <nav class="navbar">
           <div class="container nav-container">
-              <Link to="/profile" className="profile_link"><img src={user.picture} alt="profile image" className="profile_img"/></Link>
+              <Link to="/profile" className="profile_link"><img src={user.picture} alt="" className="profile_img"/></Link>
               <input ref={checkbox} class="checkbox" type="checkbox" name="" id="" />
               <div class="hamburger-lines">
                 <span class="line line1"></span>
