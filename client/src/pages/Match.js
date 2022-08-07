@@ -1,5 +1,4 @@
 import { useRef } from "react";
-import { useLinkClickHandler } from "react-router-dom";
 
 const Match = ({ likedMovies }) => { 
 
