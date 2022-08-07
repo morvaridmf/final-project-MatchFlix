@@ -4,9 +4,8 @@ import ButtonSection from "../components/ButtonSection";
 import star from '../assets/star.png';
 
 const Home = ({ dislikedMovies,  setDislikedMovies, likedMovies,  setLikedMovies }) => {
-  const { user , post} = useAuth0();
+  const { user} = useAuth0();
   const [ category, setCategory ] = useState(null);
-  const [email, setEmail] = useState(null);
   const [ counter, setCounter ] = useState(0);
   const [ movies, setMovies ] = useState([]);
   const [ movie, setMovie ] = useState(movies[counter]);
@@ -142,7 +141,7 @@ const Home = ({ dislikedMovies,  setDislikedMovies, likedMovies,  setLikedMovies
       }
     }
 
-    const imgUrl = `https://image.tmdb.org/t/p/w500/${movie.poster_path}`;
+    // const imgUrl = `https://image.tmdb.org/t/p/w500/${movie.poster_path}`;
 
     return (
       <div className="movie-card">
