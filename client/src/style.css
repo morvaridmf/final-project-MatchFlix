@@ -352,7 +352,7 @@ body {
   padding: 0.5em;
   border-radius: 10px;
   background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.633);
+  border: 1px solid #6E83CF;
   font-size: 1em;
   margin: 1em 1em 2em 1em;
 }
@@ -425,11 +425,14 @@ body {
   justify-items: center;
   height: 90vh;
 }
+.profile p {
+  color: #6E83CF;
+}
 
 .profile-img {
   width: 15em;
   border-radius: 50%;
-  border: solid 1px #f4a261;
+  border: solid 1px #6E83CF;
 }
 
 .profile-username {

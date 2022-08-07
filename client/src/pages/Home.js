@@ -52,7 +52,6 @@ const Home = ({ dislikedMovies,  setDislikedMovies, likedMovies,  setLikedMovies
           }}
           
         });
-        console.log('hei')
         setMovies(nope.filter(el => el !== undefined));});
   }, [likedMovies]);
 
@@ -78,7 +77,6 @@ const Home = ({ dislikedMovies,  setDislikedMovies, likedMovies,  setLikedMovies
           }}
           
         });
-        console.log('hei')
         setMovies(nope.filter(el => el !== undefined));});
         return;
     }
@@ -93,7 +91,6 @@ const Home = ({ dislikedMovies,  setDislikedMovies, likedMovies,  setLikedMovies
           }}
           
         });
-        console.log('change')
         setMovies(nope.filter(el => el !== undefined));
       });
   }, [category, page]);
@@ -146,8 +143,6 @@ const Home = ({ dislikedMovies,  setDislikedMovies, likedMovies,  setLikedMovies
     }
 
     const imgUrl = `https://image.tmdb.org/t/p/w500/${movie.poster_path}`;
-    console.log('hei', imgUrl);
-
 
     return (
       <div className="movie-card">
