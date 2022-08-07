@@ -34,7 +34,7 @@ export default function App() {
         setDislikedMovies([...data.disliked_movies])
       })
     }
-  }, [user])
+  }, [isAuthenticated])
 
   if(!isAuthenticated ){
     return <Login />
