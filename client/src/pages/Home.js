@@ -108,26 +108,26 @@ const Home = ({ dislikedMovies,  setDislikedMovies, likedMovies,  setLikedMovies
       <div className="option">
         <select className="category_bar" name="category" id="category" onChange={(e) => handleChange(e)}>
           <option class="option_item" value="" disabled selected>Category</option>
-          <option class="option_item" value="popular">Popular</option>
-          <option class="option_item" value="28">Action</option>
-          <option class="option_item" value="18">Drama</option>
-          <option class="option_item" value="12">Adventure</option>
-          <option class="option_item" value="16">Animation</option>
-          <option class="option_item" value="35">Comedy</option>
-          <option class="option_item" value="80">Crime</option>
-          <option class="option_item" value="99">Documentry</option>
-          <option class="option_item" value="10751">Family</option>
-          <option class="option_item" value="14">Fantasy</option>
-          <option class="option_item" value="36">History</option>
-          <option class="option_item" value="27">Horror</option>
-          <option class="option_item" value="10402">Music</option>
-          <option class="option_item" value="9648">Mystery</option>
-          <option class="option_item" value="10749">Romance</option>
-          <option class="option_item" value="878">Sience-Fiction</option>
-          <option class="option_item" value="10770">Tv-Movie</option>
-          <option class="option_item" value="53">Triller</option>
-          <option class="option_item" value="10752">War</option>
-          <option class="option_item" value="37">Western</option>
+          <option class="option_item" selected={category==="popular"} value="popular">Popular</option>
+          <option class="option_item"  selected={category==="28"} value="28">Action</option>
+          <option class="option_item" selected={category==="18"}  value="18">Drama</option>
+          <option class="option_item"  selected={category==="12"} value="12">Adventure</option>
+          <option class="option_item" selected={category==="16"} value="16">Animation</option>
+          <option class="option_item" selected={category==="35"} value="35">Comedy</option>
+          <option class="option_item" selected={category==="80"} value="80">Crime</option>
+          <option class="option_item" selected={category==="99"} value="99">Documentry</option>
+          <option class="option_item" selected={category==="10751"} value="10751">Family</option>
+          <option class="option_item" selected={category==="14"} value="14">Fantasy</option>
+          <option class="option_item" selected={category==="36"} value="36">History</option>
+          <option class="option_item" selected={category==="27"} value="27">Horror</option>
+          <option class="option_item" selected={category==="10402"}  value="10402">Music</option>
+          <option class="option_item" selected={category==="9648"} value="9648">Mystery</option>
+          <option class="option_item" selected={category==="10749"} value="10749">Romance</option>
+          <option class="option_item" selected={category==="878"} value="878">Sience-Fiction</option>
+          <option class="option_item" selected={category==="10770"} value="10770">Tv-Movie</option>
+          <option class="option_item" selected={category==="53"} value="53">Triller</option>
+          <option class="option_item" selected={category==="10752"} value="10752">War</option>
+          <option class="option_item" selected={category==="37"} value="37">Western</option>
         </select >
       </div>
     )
