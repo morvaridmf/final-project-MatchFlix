@@ -3,6 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 import ButtonSection from "../components/ButtonSection";
 import star from '../assets/star.png';
 
+
 const Home = ({ dislikedMovies,  setDislikedMovies, likedMovies,  setLikedMovies }) => {
   const { user} = useAuth0();
   const [ category, setCategory ] = useState(null);
@@ -183,4 +184,3 @@ const Home = ({ dislikedMovies,  setDislikedMovies, likedMovies,  setLikedMovies
 };
 
 export default Home;
-

@@ -1,5 +1,5 @@
 import ReactDOM from "react-dom/client";
-import React from 'react';
+import React from "react"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react";
 import { Auth0Provider } from "@auth0/auth0-react";
@@ -31,11 +31,12 @@ export default function App() {
       })
       .then(res => res.json())
       .then(data => {
+        console.log('igjen')
         setLikedMovies([...data.liked_movies])
         setDislikedMovies([...data.disliked_movies])
       })
     }
-  }, [isAuthenticated])
+  }, [user])
 
   if(!isAuthenticated ){
     return <Login />
@@ -64,6 +65,7 @@ export default function App() {
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Auth0Provider
+    // Hardcoding it for now
       domain="dev-3g7shhdy.us.auth0.com"
       clientId="7TetmI8GQhtDruSdI5ymkH4aXiLcxaOz"
       redirectUri={window.location.origin}

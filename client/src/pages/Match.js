@@ -1,13 +1,14 @@
 import { useRef } from "react";
-import React from 'react';
+import { useLinkClickHandler } from "react-router-dom";
+import React from "react"
+
 
 const Match = ({ likedMovies }) => { 
-
+ 
   const search = useRef(null);
   const matches = useRef(null);
   const matchList = [];
 
-  
 
   const handleSubmit = (e) => {
     matches.current.innerHTML = '';
@@ -39,6 +40,7 @@ const Match = ({ likedMovies }) => {
           }
         });
       }));
+      console.log(matchList)
   }
 
   return (

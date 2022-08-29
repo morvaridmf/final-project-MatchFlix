@@ -1,10 +1,14 @@
 import { useAuth0 } from "@auth0/auth0-react";
-import React from 'react';
+import { useEffect } from "react";
+import React from "react"
+
 
 
 const LikedMovies = ({ likedMovies, setLikedMovies }) => {
 
   const { user } = useAuth0();
+  // TODO: Delete list button ?? 
+  // TODO: Return message if no liked movies
   
   const MovieCard = ({ movie }) => {
 
@@ -26,6 +30,7 @@ const LikedMovies = ({ likedMovies, setLikedMovies }) => {
       .then(res => res.json())
       .then(data => {
         setLikedMovies(data.liked);
+        console.log("click",);
      })
     }
 

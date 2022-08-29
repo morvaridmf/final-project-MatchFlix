@@ -7,7 +7,9 @@ const ButtonSection = ({ counter, setCounter, dislikedMovies, setDislikedMovies,
   const dislike = useRef(null);
   
   const sendList = (newLikedMovies,newDislikedMovies) => {
-     fetch('http://localhost:3001/movie', {  
+    console.log(newLikedMovies);
+    console.log(newDislikedMovies);
+    fetch('http://localhost:3001/movie', {  
       method: 'POST', 
       // mode: 'cors', 
       headers: {
